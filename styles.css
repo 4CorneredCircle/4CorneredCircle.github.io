@@ -54,9 +54,6 @@ p {
   width: 100%;
   max-width: 1200px;
   flex-grow: 1;
-}
-
-h1 {
   text-align: center;
 }
 
