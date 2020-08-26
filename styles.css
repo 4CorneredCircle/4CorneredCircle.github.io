@@ -8,6 +8,7 @@ body {
   font-family: "Nunito", sans-serif;
   height: 100%;
   margin: 0;
+  background: steelblue;
 }
 
 .main_wrapper {
@@ -47,6 +48,7 @@ body {
 
 p {
   text-align: center;
+  margin: 10px;
 }
 
 .main2 {
@@ -85,4 +87,8 @@ p {
   margin-right: auto;
   margin-top: 20px;
   width: 35%;
+}
+
+.disclaimer {
+  font-weight: bolder;
 }
