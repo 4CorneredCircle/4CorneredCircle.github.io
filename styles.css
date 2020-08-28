@@ -93,7 +93,7 @@ p {
 }
 
 .review {
-  border: 2px solid black;
+  border-top: 2px dashed black;
 }
 
 #footer-link {
