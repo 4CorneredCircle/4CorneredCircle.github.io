@@ -90,6 +90,7 @@ p {
 
 .disclaimer {
   font-weight: bolder;
+  font-style: italic;
 }
 
 .review {
@@ -98,4 +99,22 @@ p {
 
 #footer-link {
   color: white;
+}
+
+.left-align {
+  text-align: left;
+  padding-left: 3%;
+}
+
+.larger-header {
+  font-size: 30pt;
+}
+
+.faq {
+  font-weight: bolder;
+}
+
+#banner {
+  background: yellow;
+  border: 2px solid orange;
 }
