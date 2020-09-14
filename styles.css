@@ -43,6 +43,11 @@ body {
   text-align: center;
   font-size: 16pt;
   margin: 5px;
+  color: white;
+}
+
+.links a:visited {
+  color: white;
 }
 
 p {
