@@ -28,11 +28,12 @@
           <br>
           <a href="#opal-deception">8/26/20 - Artemis Fowl: The Opal Deception</a>
         </p>
-        <div class="review">
+        <div class="review" id="warlock">
           <img src="3-5_starrating-3.png" id="special-image"/>
-          <h1 id="warlock">The Warlock</h1>
+          <h1>The Warlock</h1>
           <h2>By: Michael Scott</h2>
-          <p>
+          <p id="warlock-info">(Click Anywhere to Expand or Retract)</p>
+          <p id="warlock-text">
             <span class="disclaimer">DISCLAIMER: This review will utterly confuse anyone unfamiliar with the world of The Warlock and the previous books. I highly recommend this series, so go read those first as well as my review of the previous book, <a href="#necromancer">The Necromancer</a>, and then return to hear what I have to say!</span> <br/>
             Well everyone, we have made it to book 5 in this amazing series, <i>The Secrets of the Immortal Nicholas Flamel</i>. 
             I am sorry to say that despite its outstanding predecessors, this book is not quite everything it promises to be.
@@ -58,11 +59,12 @@
             awards from me. For the fact that I love this series and am excited for the end, I will give this book 3.5 stars.
           </p>
         </div>
-        <div class="review">
+        <div class="review" id="necromancer">
           <img src="5star.png" id="special-image"/>
-          <h1 id="necromancer">The Necromancer</h1>
+          <h1>The Necromancer</h1>
           <h2>By: Michael Scott</h2>
-          <p>
+          <p id="necromancer-info">(Click anywhere to Expand or Retract)</p>
+          <p id="necromancer-text">
             <span class="disclaimer">DISCLAIMER: This review will utterly confuse anyone unfamiliar with the world of The Necromancer and the previous books. I highly recommend this series, so go read those first as well as my review of the previous book, <a href="#sorceress">The Sorceress</a>, and then return to hear what I have to say!</span> <br/>
             The Necromancer is the 4th book in the <i>Secrets of the Immortal Nicholas Flamel</i> series, 
             and it just might be the best yet. Let's get right into the plot. At the end of the previous book, 
@@ -85,11 +87,12 @@
             exciting. If this prospect is appealing to you, I <i>highly</i> reccomend this book. Enjoy!
           </p>
         </div>
-        <div class="review">
+        <div class="review" id="sorceress">
           <img src="5star.png" id="special-image"/>
-          <h1 id="sorceress">The Sorceress</h1>
+          <h1>The Sorceress</h1>
           <h2>By: Michael Scott</h2>
-          <p>
+          <p id="sorceress-info">(Click anywhere to Expand or Retract)</p>
+          <p id="sorceress-text">
             <span class="disclaimer">DISCLAIMER: This review will utterly confuse anyone unfamiliar with the world of The Sorceress and the previous books. I highly recommend this series, so go read those first and then return to hear what I have to say!</span> <br/>
             The Sorceress is the 3rd book in the <i>Secrets of the Immortal Nicholas Flamel</i> series. As with every book in the 6 part series, this book is incredibly action-packed and so enthralling you feel like you are right next to the main characters
             at every turn. At the exposition, Nicholas and the newly Awakened twins have left Paris for London. Nicholas hopes that there he will be able to find Gilgamesh, who can teach Sophie and Josh the magic of water. What Flamel conveniently leaves out when telling his plan to the twins is that
@@ -104,11 +107,12 @@
             Once again, author Michael Scott displays amazing mastery of the fantasy genre as he blends many of the world's most popular myths into one stunning series. This book and series is a must-read for any fan of fantasy or mythology. Percy Jackson and Harry Potter beware! There's another cowboy in town!
           </p>
         </div>
-        <div class="review">
+        <div class="review" id="opal-deception">
           <img src="5star.png" id="special-image"/>
-          <h1 id="opal-deception">Artemis Fowl: The Opal Deception</h1>
+          <h1>Artemis Fowl: The Opal Deception</h1>
           <h2>By: Erin Colfer</h2>
-          <p>
+          <p id="opal-info">(Click anywhere to Expand or Retract)</p>
+          <p id="opal-text">
             <span class="disclaimer">DISCLAIMER: This review will make no sense to anyone who has not read the previous books in the Artemis Fowl series. Go read those first, and then come back to this review!</span> <br/>
             Artemis Fowl: The Opal Deception is a classic Artemis Fowl book. It is the 4th book in the <i>Artemis Fowl</i> series, and mostly follows the tried and 
             tested model of the previous books; there is a big bad guy and Artemis has to foil their plan with the help of Captain Holly Short and her 
@@ -125,4 +129,76 @@
       </div>
     </div>
   </body>
+  <script>
+    var warlockEl = document.getElementById("warlock");
+    var warlockTextEl = document.getElementById("warlock-text");
+    var warlockInfo = document.getElementById("warlock-info");
+    var warlockCounter = 1;
+
+    var expandWarlock = function() {
+      warlockTextEl.style.display = "block";
+      warlockInfo.style.display = "none";
+      warlockCounter ++;
+      if (warlockCounter > 2) {
+        warlockCounter = 1;
+        warlockTextEl.style.display = "none";
+        warlockInfo.style.display = "block";
+      };
+    };
+    warlockEl.addEventListener("click", expandWarlock);
+
+
+    var necromancerEl = document.getElementById("necromancer");
+    var necromancerTextEl = document.getElementById("necromancer-text");
+    var necromancerInfo = document.getElementById("necromancer-info");
+    var necromancerCounter = 1;
+
+    var expandNecromancer = function() {
+      necromancerTextEl.style.display = "block";
+      necromancerInfo.style.display = "none";
+      necromancerCounter ++;
+      if (necromancerCounter > 2) {
+        necromancerCounter = 1;
+        necromancerTextEl.style.display = "none";
+        necromancerInfo.style.display = "block";
+      };
+    };
+    necromancerEl.addEventListener("click", expandNecromancer);
+
+
+    var sorceressEl = document.getElementById("sorceress");
+    var sorceressTextEl = document.getElementById("sorceress-text");
+    var sorceressInfo = document.getElementById("sorceress-info");
+    var sorceressCounter = 1;
+
+    var expandSorceress = function() {
+      sorceressTextEl.style.display = "block";
+      sorceressInfo.style.display = "none";
+      sorceressCounter ++;
+      if (sorceressCounter > 2) {
+        sorceressCounter = 1;
+        sorceressTextEl.style.display = "none";
+        sorceressInfo.style.display = "block";
+      };
+    };
+    sorceressEl.addEventListener("click", expandSorceress);
+
+
+    var opalEl = document.getElementById("opal-deception");
+    var opalTextEl = document.getElementById("opal-text");
+    var opalInfo = document.getElementById("opal-info");
+    var opalCounter = 1;
+
+    var expandOpal = function() {
+      opalTextEl.style.display = "block";
+      opalInfo.style.display = "none";
+      opalCounter ++;
+      if (opalCounter > 2) {
+        opalCounter = 1;
+        opalTextEl.style.display = "none";
+        opalInfo.style.display = "block";
+      };
+    };
+    opalEl.addEventListener("click", expandOpal);
+  </script>
 </html>

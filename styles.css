@@ -43,11 +43,11 @@ body {
   text-align: center;
   font-size: 16pt;
   margin: 5px;
-  color: white;
+  color: yellow;
 }
 
 .links a:visited {
-  color: white;
+  color: yellow;
 }
 
 p {
@@ -122,4 +122,20 @@ p {
 #banner {
   background: yellow;
   border: 2px solid orange;
+}
+
+#warlock-text {
+  display: none;
+}
+
+#necromancer-text {
+  display: none;
+}
+
+#sorceress-text {
+  display: none;
+}
+
+#opal-text {
+  display: none;
 }
