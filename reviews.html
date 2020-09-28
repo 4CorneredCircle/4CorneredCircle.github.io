@@ -29,6 +29,8 @@
       <div class="main2">
         <h1>Table of Contents</h1>
         <p>
+          <a href="#illuminae">9/28/20 - Illuminae</a>
+          <br>
           <a href="#warlock">9/9/20 - The Warlock</a>
           <br>
           <a href="#necromancer">9/3/20 - The Necromancer</a>
@@ -37,6 +39,28 @@
           <br>
           <a href="#opal-deception">8/26/20 - Artemis Fowl: The Opal Deception</a>
         </p>
+        <div class="review" id="illuminae">
+          <img src="5star.png" id="special-image"/>
+          <h1>Illuminae</h1>
+          <h2>By: Amy Kaufman and Jay Kristoff</h2>
+          <p id="illuminae-info">(Click Anywhere to Expand or Retract)</p>
+          <p id="illuminae-text">
+            Hello readers! Right after I finished reviewing The Warlock, I put a hold on the final book in the series, The Enchantress. I always need a book to read, though, so while I waited I decided to pick up a
+            series that I have been meaning to read for a long time. This is the first book in that series and I am delighted to say that it made such an impact on me that I knew I had to review it soon. I hope you enjoy! <br>
+            <br>
+            As I was thinking about how best to write this review, I decided I wanted to keep in on the shorter side. Not because I don't have a lot to say, but because I believe the best impact this review could have on you
+            would be to make you want to read this book without giving too much away. This simple idea gets to the root of what is amazing about this book. Its story lives in the spaces between your knowledge. It thrives in the gaps,
+            as you try to piece together what is really happening. At this point I am probably confusing you, so lets get into the plot and I'll show you what I mean. <br> <br>
+            This book is pretty hard-core science fiction, and it wastes no time getting to the point. Main characters Kady and Ezra live in a small colony on an icy planet at the edge of the galaxy called Kerenza IV. The colony's main purpose is to mine
+            a valuable material called Hermium for it's parent company, Wallace Ulyanov Consortium (WUC). There's only one small problem: the colony is illegal under United Terran Authority (UTA) laws. BeiTech, a competitor of WUC, finds out
+            about the colony and instead of reporting it to the UTA, decides to launch an all-out attack on the colony to claim its valuable resources for itself. And this is where we catch up with Kady and Ezra. As missles rain down from the sky,
+            Kady and Ezra must fight their way to an evacuation ship. Oh, and Kady just broke up with Ezra. <br>
+            <br>
+            This review <i>barely</i> scratches the surface of this book, but I hesitate to give you anymore information about it. It is truly an amazing book, and if you are an avid reader of science fiction, you are sure to love it.
+            Plot twist, after plot twist after plot twist leaves you entirely confused but incredibly engaged, and when the pieces start to come into place you will be left with an amazed grin for days. I hope you enjoy, and I will be 
+            back soon with a review of the next book, Gemina! Happy reading!
+          </p>
+        </div>
         <div class="review" id="warlock">
           <img src="3-5_starrating-3.png" id="special-image"/>
           <h1>The Warlock</h1>
@@ -139,6 +163,23 @@
     </div>
   </body>
   <script>
+    var illuminaeEl = document.getElementById("illuminae");
+    var illuminaeTextEl = document.getElementById("illuminae-text");
+    var illuminaeInfo = document.getElementById("illuminae-info");
+    var illuminaeCounter = 1;
+
+    var expandIlluminae = function() {
+      illuminaeTextEl.style.display = "block";
+      illuminaeInfo.style.display = "none";
+      illuminaeCounter ++;
+      if (illuminaeCounter > 2) {
+        illuminaeCounter = 1;
+        illuminaeTextEl.style.display = "none";
+        illuminaeInfo.style.display = "block";
+      };
+    };
+    illuminaeEl.addEventListener("click", expandIlluminae);
+
     var warlockEl = document.getElementById("warlock");
     var warlockTextEl = document.getElementById("warlock-text");
     var warlockInfo = document.getElementById("warlock-info");

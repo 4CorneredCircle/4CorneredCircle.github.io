@@ -120,8 +120,8 @@ p {
 }
 
 #banner {
-  background: yellow;
-  border: 2px solid orange;
+  background: rgb(221, 54, 255);
+  border: 2px solid rgb(126, 19, 158);
 }
 
 #warlock-text {
@@ -137,5 +137,9 @@ p {
 }
 
 #opal-text {
+  display: none;
+}
+
+#illuminae-text {
   display: none;
 }
