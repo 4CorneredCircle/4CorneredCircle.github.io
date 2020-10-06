@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178635949-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-178635949-1');
-</script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178635949-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>My Booklist</title>
-  </head>
-  <body>
-    <div class="main_wrapper">
-      <div class="main">
-        <h1 class="page-header">My Booklist</h1>
-        <h2 id="center">My top rated books and series!</h3>
-        <div class="links">
-          <a href="index.html">Home</a>
-          <a href="reviews.html">Reviews</a>
-          <a href="booklist.html">My Booklist</a>
-        </div>
-      </div>
-      <div class="main2">
-        <h1>My Booklist</h1>
-        <img src="podium.png" class="image"/>
-        <p>
-          Here are some of my favorite books ever! I've broken the lists down by genre. I hope you enjoy and maybe get some inspiration for your next read! <br/> (Coming soon)
-        </p>
-        <div class="footer">
-          Books are fun!
-        </div>
+    gtag('config', 'UA-178635949-1');
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>My Booklist</title>
+</head>
+
+<body>
+  <div id="sidebar">
+    <div class="toggle-button" onclick="toggleSidebar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="booklist.html">Booklist</a></li>
+    </ul>
+  </div>
+  <div class="main_wrapper">
+    <div class="main">
+      <h1 class="page-header">My Booklist</h1>
+      <h2 id="center">My top rated books and series!</h3>
+    </div>
+    <div class="main2">
+      <h1>My Booklist</h1>
+      <img src="podium.png" class="image" />
+      <p>
+        Here are some of my favorite books ever! I've broken the lists down by genre. I hope you enjoy and maybe get
+        some inspiration for your next read! <br /> (Coming soon)
+      </p>
+      <div class="footer">
+        Books are fun!
       </div>
     </div>
-  </body>
+  </div>
+</body>
+<script>
+  function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("active");
+  }
+</script>
+
 </html>

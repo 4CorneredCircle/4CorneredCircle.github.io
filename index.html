@@ -20,15 +20,22 @@
 </head>
 
 <body>
+  <div id="sidebar">
+    <div class="toggle-button" onclick="toggleSidebar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="booklist.html">Booklist</a></li>
+    </ul>
+  </div>
   <div class="main_wrapper">
     <div class="main">
       <h1 class="page-header">Squared Circle</h1>
       <h2 id="center">A blog about books!</h2>
-      <div class="links">
-        <a href="index.html">Home</a>
-        <a href="reviews.html">Reviews</a>
-        <a href="booklist.html">My Booklist</a>
-      </div>
     </div>
     <div class="main2">
       <br />
@@ -37,7 +44,7 @@
         <p>
           I just reviewed the mind-bending science fiction book, Illuminae!
           Come one, come all, and see what makes Illuminae so electrifying!
-          <a href="reviews.html#illuminae" style="color: white">Take me there!</a>
+          <a href="reviews.html#illuminae">Take me there!</a>
         </p>
       </div>
       <img src="books.png" id="special-image" alt="" />
@@ -70,5 +77,10 @@
     </div>
   </div>
 </body>
+<script>
+  function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("active");
+  }
+</script>
 
 </html>
