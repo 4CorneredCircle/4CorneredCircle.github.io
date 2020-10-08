@@ -21,10 +21,10 @@
 
 <body>
   <div id="sidebar">
-    <div class="toggle-button" onclick="toggleSidebar()">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="toggle-button" onclick="toggleSidebar(this)">
+      <span class="bar1"></span>
+      <span class="bar2"></span>
+      <span class="bar3"></span>
     </div>
     <ul>
       <li style="font-size: xx-large; border-bottom: 2px solid grey;">Pages:</li>
@@ -79,8 +79,9 @@
   </div>
 </body>
 <script>
-  function toggleSidebar() {
+  function toggleSidebar(x) {
     document.getElementById("sidebar").classList.toggle("active");
+    x.classList.toggle("change");
   }
 </script>
 

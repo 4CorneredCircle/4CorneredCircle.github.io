@@ -97,14 +97,34 @@ p {
   position: absolute;
   left: 280px;
   top: 20px;
+  display: inline-block;
+  cursor: pointer;
 }
 
 #sidebar .toggle-button span {
   display: block;
-  width: 30px;
+  width: 35px;
   height: 5px;
   background: white;
-  margin: 5px 0px;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-9px, -8px);
+  transform: rotate(45deg) translate(-9px, -8px);
 }
 
 .image {
