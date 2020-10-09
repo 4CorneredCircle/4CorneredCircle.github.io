@@ -32,24 +32,6 @@ body {
   font-size: 48pt;
 }
 
-.links {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin-bottom: 15px;
-}
-
-.links a {
-  text-align: center;
-  font-size: 16pt;
-  margin: 5px;
-  color: yellow;
-}
-
-.links a:visited {
-  color: yellow;
-}
-
 p {
   text-align: center;
   margin: 10px;
@@ -146,9 +128,6 @@ p {
   padding-bottom: 8px;
 }
 
-#center {
-  text-align: center;
-}
 
 #special-image {
   display: block;
@@ -175,11 +154,6 @@ p {
 
 #footer-link {
   color: white;
-}
-
-.left-align {
-  text-align: left;
-  padding-left: 3%;
 }
 
 .larger-header {
