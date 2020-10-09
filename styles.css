@@ -8,7 +8,7 @@ body {
   font-family: "Nunito", sans-serif;
   height: 100%;
   margin: 0px;
-  background: steelblue;
+  background-image: linear-gradient(to bottom, steelblue, rgb(15, 204, 204), steelblue);
 }
 
 .main_wrapper {
@@ -108,6 +108,7 @@ p {
   background: white;
   margin: 6px 0px;
   transition: 0.4s;
+  box-shadow: black;
 }
 
 /* Rotate first bar */
@@ -123,8 +124,8 @@ p {
 
 /* Rotate last bar */
 .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-9px, -8px);
-  transform: rotate(45deg) translate(-9px, -8px);
+  -webkit-transform: rotate(45deg) translate(-9px, -7px);
+  transform: rotate(45deg) translate(-9px, -7px);
 }
 
 .image {
@@ -164,6 +165,12 @@ p {
 
 .review {
   border-top: 2px dashed black;
+  font-size: large;
+}
+
+.review p {
+  text-align: left;
+  margin: 20px;
 }
 
 #footer-link {
