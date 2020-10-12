@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178635949-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-178635949-1");
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>About</title>
+</head>
+
+<body>
+    <div id="sidebar">
+        <div class="toggle-button" onclick="toggleSidebar(this)">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </div>
+        <ul>
+            <li style="font-size: xx-large; border-bottom: 2px solid grey;">Pages:</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="booklist.html">Booklist</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    <div class="main_wrapper">
+        <div class="main">
+            <h1 class="page-header">About</h1>
+            <h2 style="text-align: center;">All about Squared Circle and me!</h2>
+        </div>
+        <div class="main2">
+            <img src="books.png" id="special-image" alt="" />
+            <p style="font-size: large;">
+                I love reading books. I do it ALL the time. So on this website, I
+                decided to review books that I've read. I'll try my best to give honest,
+                fair reviews with some plot elements and some overall critique.
+            </p>
+            <br>
+            <h1 class="left-align larger-header">Stuff You Should Know</h1>
+            <p style="text-align: left; font-size: large; margin: 20px;">
+                <span class="faq">Q: Do any of your reviews contain spoilers?</span>
+            <p style="text-align: left;">
+                A: There will never be anything I consider spoilers in any of my
+                reviews. I want to give everyone the chance to experience the books
+                for themselves! If you are very concerned about spoilers, though, read
+                the book first and then come back to see what I said about it!
+            </p>
+            <br>
+            <p style="text-align: left;">
+                <span class="faq" style="text-align: left;">Q: What are your favorite genres?</span> <br>
+                A: I read a lot of fantasy and science fiction. Look at my top books
+                in specific genres at the <a href="booklist.html">Booklist</a> page.
+            </p>
+            <br>
+            <p style="text-align: left;">
+                <span class="faq">Q: Who are you?</span> <br>
+                A: I am a teenage book enthusiast who also enjoys coding. I
+                decided to combine those interests by making this website from scratch
+                using GitHub Pages.
+            </p>
+            <br>
+            <p style="text-align: left;">
+                <span class="faq">Q: Doesn't "Squared Circle" have boxing connections?</span> <br>
+                A: Surprisingly, yes! If you didn't know about this, the term Squared Circle
+                is commonly used to refer to a boxing ring! I did not know that when I was
+                making this website, though. I was referencing my username on GitHub,
+                4CorneredCircle! Anyways, you learn something new every day!
+            </p>
+        </div>
+        <div class="footer">Books are fun!</div>
+    </div>
+    </div>
+</body>
+<script>
+    function toggleSidebar(x) {
+        document.getElementById("sidebar").classList.toggle("active");
+        x.classList.toggle("change");
+    }
+</script>
+
+</html>

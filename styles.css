@@ -53,6 +53,7 @@ p {
   left: -250px;
   transition: all 400ms linear;
   border-right: 2px solid white;
+  z-index: 4;
 }
 
 #sidebar.active {
@@ -110,6 +111,97 @@ p {
   transform: rotate(45deg) translate(-9px, -7px);
 }
 
+.welcome-header {
+  background: white;
+  border-radius: 20px;
+  width: 1000px;
+  height: 200px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: 50px;
+}
+
+.welcome-text {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.bubble-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: center;
+  position: relative;
+  top: 300px;
+}
+
+.bubble-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.reviews-bubble {
+  background: white;
+  border-radius: 50px;
+  width: 350px;
+  height: 375px;
+  text-align: center;
+  position: relative;
+  left: -50px;
+}
+
+.reviews-bubble img {
+  width: 300px;
+  position: relative;
+  top: 10px;
+}
+
+.about-bubble {
+  background: white;
+  border-radius: 50px;
+  width: 350px;
+  height: 375px;
+  text-align: center;
+}
+
+.about-bubble img {
+  position: relative;
+  top: 10px;
+  width: 300px;
+}
+
+.booklist-bubble {
+  background: white;
+  border-radius: 50px;
+  width: 350px;
+  height: 375px;
+  text-align: center;
+  position: relative;
+  left: 50px;
+}
+
+.booklist-bubble img {
+  width: 349px;
+  position: relative;
+  top: 40px;
+}
+
+@media only screen and (max-width: 700px){
+  .reviews-bubble {
+    left: 0px;
+    bottom: 50px;
+  }
+  .about-bubble {
+    left: 0px;
+  }
+  .booklist-bubble {
+    left: 0px;
+    bottom: -50px;
+  }
+}
+
 .image {
   display: block;
   margin-left: auto;
@@ -126,6 +218,7 @@ p {
   text-align: center;
   padding-top: 8px;
   padding-bottom: 8px;
+  font-size: large;
 }
 
 
