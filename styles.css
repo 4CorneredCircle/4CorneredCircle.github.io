@@ -114,7 +114,7 @@ p {
 .welcome-header {
   background: white;
   border-radius: 20px;
-  width: 1000px;
+  width: 90%;
   height: 200px;
   text-align: center;
   margin: auto;
@@ -187,7 +187,26 @@ p {
   position: relative;
   top: 40px;
 }
-
+/*
+@media only screen and (max-width: 1050px){
+  .welcome-header{
+    width: 90%;
+  }
+  .reviews-bubble {
+    position: relative;
+    left: -10px;
+  }
+  .about-bubble {
+    position: relative;
+    left: 10px;
+  }
+  .booklist-bubble {
+    position: relative;
+    left: -10px;
+    top: 15px;
+  }
+}
+*/
 @media only screen and (max-width: 700px){
   .reviews-bubble {
     left: 0px;
@@ -199,6 +218,10 @@ p {
   .booklist-bubble {
     left: 0px;
     bottom: -50px;
+  }
+  .welcome-header{
+    width: 95%;
+    height: 250px;
   }
 }
 
@@ -213,7 +236,7 @@ p {
 .footer {
   background: navy;
   color: white;
-  border-top: 1px solid black;
+  height: 30px;
   width: 100%;
   text-align: center;
   padding-top: 8px;
