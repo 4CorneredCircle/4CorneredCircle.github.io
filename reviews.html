@@ -47,6 +47,32 @@
         <li><a href="#sorceress">8/28/20 - The Sorceress</a></li>
         <li><a href="#opal-deception">8/26/20 - Artemis Fowl: The Opal Deception</a></li>
       </ul>
+      <div class="review" id="murphy" style="cursor: pointer;">
+        <h2><u>SPECIAL GUEST REVIEW BY MY SISTER!</u></h2>
+        <img src="5star.png" id="special-image" />
+        <h1>One For the Murphys</h1>
+        <h2>By: Lynda Mullaly Hunt</h2>
+        <p id="murphy-info" style="text-align: center;">(Click Anywhere to Expand or Retract)</p>
+        <p id="murphy-text">
+          One for the Murphy’s: One for the Murphys is a children's novel about the hardships and struggles of foster
+          care. The main character, Carly, is forced into foster care after being abused by her stepdad. One thing you
+          must know before you know the plot of this book is that Carly’s biological family is not a normal one. They
+          are the type of family that goes dumpster diving for clothes instead of going to a store. They’re the type
+          of
+          people that could care less about education. Knowing this, I will now explain why you needed to know this.
+          After Carly's family is not able to care of her anymore, she is placed with a family that is almost the
+          exact
+          opposite of what Carly is used to. The family she is placed with is a loving, kind, and supportive family.
+          Carly isn’t happy being in foster care in the first place, but being in an environment like this one makes
+          the
+          experience a whole lot worse. While with the Murphy’s, Carly learns how to be less stubborn and support the
+          people in her life. She has to adapt to their ways of living whether she likes it or not. In the long term
+          though, the Murphy's end up changing Carly’s life forever and the memories she made with them will be with
+          her
+          forever. That’s all I’m going to tell you so you’ll have to read the book to find out more. Happy reading!
+        </p>
+      </div>
+      <br>
       <!--Gemina Review-->
       <div class="review" id="gemina" style="cursor: pointer;">
         <img src="4-5 stars.png" id="special-image" />
@@ -276,6 +302,24 @@
   </div>
 </body>
 <script>
+  //One for the Murphys
+  var murphyEl = document.getElementById("murphy");
+  var murphyTextEl = document.getElementById("murphy-text");
+  var murhpyInfoEl = document.getElementById("murphy-info");
+  var murphyCounter = 1;
+
+  var expandMurphy = function () {
+    murphyTextEl.style.display = "block";
+    murhpyInfoEl.style.display = "none";
+    murphyCounter++;
+    if (murphyCounter > 2) {
+      murphyCounter = 1;
+      murphyTextEl.style.display = "none";
+      murhpyInfoEl.style.display = "block";
+    };
+  };
+  murphyEl.addEventListener("click", expandMurphy);
+
   var geminaEl = document.getElementById("gemina");
   var geminaTextEl = document.getElementById("gemina-text");
   var geminaInfoEl = document.getElementById("gemina-info");
