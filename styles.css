@@ -2,6 +2,7 @@
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -144,6 +145,12 @@ p {
   border: 4px dashed orange;
 }
 
+@media only screen and (max-width: 600px) {
+  .banner-bubble {
+    width: 90%;
+  }
+}
+
 .bubble-container {
   display: flex;
   flex-direction: row;
@@ -266,6 +273,9 @@ p {
 
 .review-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
 }
 
 .review-list a:visited {
@@ -329,10 +339,6 @@ p {
 
 #gemina-text {
   display: none;
-}
-
-#murphy {
-  border: 4px dashed yellow;
 }
 
 #murphy-text {
