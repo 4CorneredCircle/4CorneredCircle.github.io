@@ -40,6 +40,7 @@
     <div class="main2">
       <h1>Table of Contents</h1>
       <ul class="review-list">
+        <li><a href="#ender">12/15/20 - Ender's Game</a></li>
         <li><a href="#gemina">10/19/20 - Gemina</a></li>
         <li><a href="#illuminae">9/28/20 - Illuminae</a></li>
         <li><a href="#warlock">9/9/20 - The Warlock</a></li>
@@ -47,6 +48,32 @@
         <li><a href="#sorceress">8/28/20 - The Sorceress</a></li>
         <li><a href="#opal-deception">8/26/20 - Artemis Fowl: The Opal Deception</a></li>
       </ul>
+      <div class="review" id="ender" style="cursor: pointer;">
+        <img src="5star.png" id="special-image" />
+        <h1>Ender's Game</h1>
+        <h2>By: Orson Scott Card</h2>
+        <p id="ender-info" style="text-align: center;">(Click Anywhere to Expand or Retract)</p>
+        <p id="ender-text">
+          Hello again everyone! I know it has been quite a while since I updated this site, but I am back, and I have a ton of more content coming soon! 
+          While that is being prepared, please enjoy this review of the much-adored science fiction novel, Ender’s Game.<br><br>
+          I am just going to start off by saying that this book is one of my favorite science fiction books that I have ever read. I first read it in fourth grade, 
+          and I recently returned to it for another read. It holds up as a great book for younger and older children alike. I think there is no better way to show 
+          this off than to dive right into a plot summary, followed by some of my thoughts and commentary.<br><br>
+          Andrew “Ender” Wiggins is the third child in his family in a time where the law restricts families to two. The only reason he exists is thanks to the 
+          International Fleet (IF), a global military dedicated to protecting humanity from alien threats. They monitored Ender’s siblings before he was born, looking 
+          for a genius that could lead Earth’s spaceships against the “buggers”, an intelligent alien species that tried to invade Earth twice before. Both failed. 
+          Peter, the oldest sibling, had a violent streak. Valentine, the middle sibling, wasn’t ambitious enough. The IF asked Ender’s parents to have one more child, 
+          and Ender was born. Ender lives pretty uneventfully on Earth for the beginning of his life, but that period doesn’t last long. At the age of six, Ender is whisked 
+          away to Battle School, a ring-shaped space station that orbits the Earth and is used to train the next generations of soldiers and leaders in the IF. At Battle School, 
+          Ender is intentionally isolated from his peers, moving from group to group so often that he cannot form many meaningful bonds. He is tested mentally and physically, 
+          with no one to rely on except himself. He makes enemies and defeats them with calculated precision. He forms strategies which have never been seen before. 
+          There is no rest for Ender, because the military heads overseeing his education know something that no one else does. Time is running out, and Ender is the world’s only hope.<br><br>
+          Ender’s Game is so different from the numerous other “alien invasion” books that exist for one simple reason: it is an alien invasion book that is not about the aliens. 
+          Instead, it is a book about the sacrifices and hard decisions that mold a genius child into a hero that can save the world. It is about strategies and concepts that make 
+          your head hurt and your mind bend in delightful and extraordinary ways. But most of all, it is just a fantastic read. 
+          If you are interested in science-fiction, I believe you cannot call yourself a true fan until you have read Ender’s Game.
+        </p>
+      </div>
       <div class="review" id="murphy" style="cursor: pointer;">
         <h2><u>SPECIAL GUEST REVIEW BY MY SISTER!</u></h2>
         <img src="5star.png" id="special-image" />
@@ -301,6 +328,20 @@
   </div>
 </body>
 <script>
+  //Ender's Game
+  var enderCounter = 1;
+  var expandEnder = function () {
+    document.getElementById("ender-text").style.display = "block";
+    document.getElementById("ender-info").style.display = "none";
+    enderCounter++;
+    if (enderCounter > 2) {
+      enderCounter = 1;
+      document.getElementById("ender-text").style.display = "none";
+      document.getElementById("ender-info").style.display = "block";
+    };
+  };
+  document.getElementById("ender").addEventListener("click", expandEnder);
+
   //One for the Murphys
   var murphyEl = document.getElementById("murphy");
   var murphyTextEl = document.getElementById("murphy-text");
@@ -332,8 +373,8 @@
       geminaCounter = 1;
       geminaTextEl.style.display = "none";
       geminaInfoEl.style.display = "block";
-    }
-  }
+    };
+  };
   geminaEl.addEventListener("click", expandGemina)
 
   //Illuminae Expander
