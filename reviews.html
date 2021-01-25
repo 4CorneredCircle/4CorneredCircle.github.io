@@ -48,6 +48,40 @@
         <li><a href="#sorceress">8/28/20 - The Sorceress</a></li>
         <li><a href="#opal-deception">8/26/20 - Artemis Fowl: The Opal Deception</a></li>
       </ul>
+      <div class="review" id="mockingbird" style="cursor: pointer;">
+        <h1>To Kill a Mockingbird</h1>
+        <h2>By: Harper Lee</h2>
+        <p id="mockingbird-info" style="text-align: center;">(Click Anywhere to Expand or Retract)</p>
+        <div id="mockingbird-text">
+          <b>Note:</b> This review is not a normal review. My English class recently read To Kill a Mockingbird, and I was asked to write an essay on it. I went through 
+          all the work of writing it, so I thought it would be fun to share it here too. It is in MLA format, as usual with school papers, so it will look and sound very different from 
+          my usual review. With all that said, I hope you enjoy!<br><br>
+          <div>The Journey to Maturity</div>
+          <p> Any life will have its share of good and bad moments. These are the moments you learn from and they will stay with you forever. Scout and Jem go through many of these 
+          stages, but overall in To Kill a Mockingbird by Harper Lee, growing up is a series of gains.<br><br>
+          For example, Jem gains a greater understanding of Boo Radley as he grows up. Jem is afraid of Boo Radley when he is young, but as he gets older, he realizes that Boo is 
+          just a lonely recluse and not someone to be scared of. This example shows Jem realizing that not everyone is like him and some people just want to be left alone. 
+          As he says, “Scout, I think I’m beginning to understand something. I think I’m beginning to understand why Boo Radley’s stayed 
+          shut up in the house all this time… it’s because he wants to stay inside” (Lee, 227). When Boo saves Jem and Scout’s lives, Scout gets to finally talk to him and 
+          their childhood fascination is ended.<br><br>
+          In addition, Scout and Jem get more privileges as they mature. Scout and Jem want air rifles for Christmas, but Atticus initially says no. Atticus ends up changing his 
+          mind after seeing that they are mature enough to handle them. He decides to use it as a teaching opportunity, telling them, “Shoot all the bluejays you want, if you can 
+          hit 'em, but remember it's a sin to kill a mockingbird” (Lee, 90). This theme comes up later in the book when it is revealed that Boo was the one who stabbed Bob Ewell 
+          and Scout reminds Atticus of this quote.<br><br>
+          Finally, Scout gains a way of thinking about the world that is based more on evidence and critical thinking. When Scout first goes to school, Jem tells her that her teacher 
+          uses a new teaching method, saying, “I’m just trying to tell you the new way they’re teachin‘ the first grade, stubborn. It’s the Dewey Decimal System” (Lee 18). In reality, 
+          the Dewy Decimal System is used to help in the categorization of books in a library, but Scout takes his word for fact. She comments, “Having never questioned Jem’s 
+          pronouncements, I saw no reason to begin now” (Lee 18). In contrast, at the end of the book, Scout is able to understand what happened on the night with Mr. Ewell without 
+          much difficulty thanks to her logical reasoning skills.<br><br>
+          In summary, To Kill a Mockingbird by Harper Lee is a book about the joys and hardships of growing up. Scout and Jem are forced to live through many difficult situations 
+          throughout the story, but they also gain understanding, privileges, and critical thinking skills. Growing up is not always easy, but what Scout and Jem learn on the way 
+          will stay with them for the rest of their lives.<br><br><br>
+
+          <div>Works Cited </div><br>
+          <p>Lee, Harper. To Kill a Mockingbird. New York: Warner Books, 1960.</p><br>
+          </p>
+        </div>
+      </div>
       <div class="review" id="ender" style="cursor: pointer;">
         <img src="5star.png" id="special-image" />
         <h1>Ender's Game</h1>
@@ -231,7 +265,7 @@
       </div>
       <!--The Necromancer Review-->
       <div class="review" id="necromancer" style="cursor: pointer;">
-        <img src="5star.png" id="special-image" />
+        <img src="4-5 stars.png" id="special-image" />
         <h1>The Necromancer</h1>
         <h2>By: Michael Scott</h2>
         <p id="necromancer-info" style="text-align: center;">(Click anywhere to Expand or Retract)</p>
@@ -328,6 +362,20 @@
   </div>
 </body>
 <script>
+  //To Kill a Mockingbird
+  var mockingbirdCounter = 1;
+  var expandMockingbird = function() {
+    document.getElementById("mockingbird-text").style.display = "block";
+    document.getElementById("mockingbird-info").style.display = "none";
+    mockingbirdCounter++;
+    if (mockingbirdCounter > 2) {
+      mockingbirdCounter = 1;
+      document.getElementById("mockingbird-text").style.display = "none";
+      document.getElementById("mockingbird-info").style.display = "block";
+    };
+  };
+  document.getElementById("mockingbird").addEventListener("click", expandMockingbird);
+
   //Ender's Game
   var enderCounter = 1;
   var expandEnder = function () {
