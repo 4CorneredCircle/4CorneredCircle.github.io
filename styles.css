@@ -133,32 +133,58 @@ p {
   display: inline-block;
 }
 
-.banner-bubble {
-  position: relative;
-  top: 140px;
-  background: yellow;
-  width: 70%;
-  height: 150px;
-  margin: auto;
-  text-align: center;
-  border-radius: 50px;
-  border: 4px dashed orange;
-}
-
 @media only screen and (max-width: 600px) {
   .banner-bubble {
     width: 90%;
   }
 }
 
+#updates-bubble {
+  background: white;
+  border-radius: 50px;
+  width: 38%;
+  height: 97.5%;
+  position: relative;
+  left: 41%;
+  bottom: 86.5%;
+}
+
+#updates-bubble p {
+  position: relative;
+  top: 40px;
+  text-align: left;
+  margin: 30px;
+  font-size: 15pt;
+}
+
+#updates-bubble-title {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(22, 186, 236),
+    rgb(15, 204, 204)
+  );
+  border-radius: 20px;
+  width: 75%;
+  height: 11%;
+  position: relative;
+  top: 4%;
+  margin: auto;
+}
+
+#updates-bubble h1 {
+  text-align: center;
+  padding: 30px;
+}
+
 .bubble-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   flex-grow: 1;
   justify-content: center;
   position: relative;
-  top: 300px;
+  left: 22%;
+  top: 12%;
 }
 
 .bubble-container a {
@@ -169,15 +195,15 @@ p {
 .reviews-bubble {
   background: white;
   border-radius: 50px;
-  width: 350px;
-  height: 375px;
+  width: 300px;
+  height: 5%;
   text-align: center;
   position: relative;
-  left: -50px;
+  bottom: 10px;
 }
 
 .reviews-bubble img {
-  width: 300px;
+  width: 70%;
   position: relative;
   top: 10px;
 }
@@ -185,29 +211,29 @@ p {
 .about-bubble {
   background: white;
   border-radius: 50px;
-  width: 350px;
-  height: 375px;
+  width: 300px;
+  height: 5%;
   text-align: center;
 }
 
 .about-bubble img {
   position: relative;
   top: 15px;
-  width: 300px;
+  width: 70%;
 }
 
 .booklist-bubble {
   background: white;
   border-radius: 50px;
-  width: 350px;
-  height: 375px;
+  width: 300px;
+  height: 300px;
   text-align: center;
   position: relative;
-  left: 50px;
+  top: 10px;
 }
 
 .booklist-bubble img {
-  width: 349px;
+  width: 90%;
   position: relative;
   top: 40px;
 }
