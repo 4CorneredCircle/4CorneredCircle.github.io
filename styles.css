@@ -382,3 +382,27 @@ p {
 #nyxia-text {
   display: none;
 }
+
+#mobile-warning{
+  display: none;
+  background: yellow;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 4;
+  font-size: x-large;
+}
+
+#mobile-warning p {
+  position: relative;
+  top: 40%;
+}
+
+@media only screen and (max-width: 800px) {
+  #mobile-warning {
+    display: initial;
+  }
+}
