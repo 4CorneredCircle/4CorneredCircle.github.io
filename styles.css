@@ -133,12 +133,6 @@ p {
   display: inline-block;
 }
 
-@media only screen and (max-width: 600px) {
-  .banner-bubble {
-    width: 90%;
-  }
-}
-
 #updates-bubble {
   background: white;
   border-radius: 50px;
@@ -147,6 +141,7 @@ p {
   position: relative;
   left: 41%;
   bottom: 86.5%;
+  overflow-y: scroll;
 }
 
 #updates-bubble p {
@@ -236,46 +231,6 @@ p {
   width: 90%;
   position: relative;
   top: 40px;
-}
-/*
-@media only screen and (max-width: 1050px){
-  .welcome-header{
-    width: 90%;
-  }
-  .reviews-bubble {
-    position: relative;
-    left: -10px;
-  }
-  .about-bubble {
-    position: relative;
-    left: 10px;
-  }
-  .booklist-bubble {
-    position: relative;
-    left: -10px;
-    top: 15px;
-  }
-}
-*/
-@media only screen and (max-width: 800px) {
-  .reviews-bubble {
-    left: 0px;
-    bottom: 50px;
-  }
-  .about-bubble {
-    left: 0px;
-  }
-  .booklist-bubble {
-    left: 0px;
-    bottom: -50px;
-  }
-  .welcome-header {
-    width: 95%;
-    height: 250px;
-  }
-  .banner-bubble {
-    height: 200px;
-  }
 }
 
 .image {
@@ -401,8 +356,69 @@ p {
   top: 40%;
 }
 
+#top-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#top-button:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+/*
 @media only screen and (max-width: 800px) {
   #mobile-warning {
     display: initial;
+  }
+}
+*/
+
+@media only screen and (max-width: 1000px) {
+  .bubble-container {
+    flex-direction: column;
+    align-items: center;
+    left: 0px;
+  }
+
+  .reviews-bubble {
+    width: 75%;
+    left: 0px;
+    margin: auto;
+  }
+  .about-bubble {
+    width: 107%;
+    left: 0px;
+    margin: auto;
+    right: 0px;
+  }
+  .booklist-bubble {
+    width: 75%;
+    left: 0px;
+    height: 275px;
+    margin: auto;
+  }
+  .welcome-header {
+    width: 95%;
+    height: 250px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  #updates-bubble {
+    top: 150px;
+    margin: auto;
+    width: 93%;
+    left: 0px;
+    overflow-y: scroll;
   }
 }

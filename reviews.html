@@ -383,8 +383,9 @@
         </p>
       </div>
       <div class="footer">
-        <a href="#top" id="footer-link">Back to top</a>
+        <a href="#top" id="footer-link"></a>
       </div>
+      <button onclick="topFunction()" id="top-button" title="Go to Top">Back to top</button>
     </div>
   </div>
 </body>
@@ -556,9 +557,25 @@
   opalEl.addEventListener("click", expandOpal);
 </script>
 <script>
+  //toggle sidebar function
   function toggleSidebar(x) {
     document.getElementById("sidebar").classList.toggle("active");
     x.classList.toggle("change");
+  }
+
+  var topButton = document.getElementById("top-button");
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+      topButton.style.display = "block";
+    } else {
+      topButton.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 </script>
 
