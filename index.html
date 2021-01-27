@@ -43,19 +43,19 @@
   <div class="bubble-container">
     <a href="reviews.html">
       <div class="reviews-bubble">
-        <img src="books.png">
+        <img src="books.png" alt="Image of a stack of books" title="All of my reviews!">
         <h2>Book Reviews</h2>
       </div>
     </a>
     <a href="about.html">
       <div class="about-bubble">
-        <img src="favicon.ico">
+        <img src="favicon.ico" alt="Site logo" title="Learn about me and this site!">
         <h2>About</h2>
       </div>
     </a>
     <a href="booklist.html">
       <div class="booklist-bubble">
-        <img src="podium.png">
+        <img src="podium.png" alt="Podium image" title="My top books organized by genre.">
         <h2 style="position: relative; top: 30px;">My Top Books</h2>
       </div>
     </a>
@@ -92,13 +92,15 @@
     <p>&#9888; This page is not yet ready for mobile viewing. Please view it on your computer while we try to fix it. We apologize for the inconvinience.</p>
   </div>
   <!--Div that makes sure that the page extends downwards past the bottom-most tag-->
-  <div style="position: relative; top: 215px;"><br></div>
+  <div class="footer" id="index-footer">&copy; 2019 - <span id="year"></span></div>
 </body>
 <script>
   function toggleSidebar(x) {
     document.getElementById("sidebar").classList.toggle("active");
     x.classList.toggle("change");
   }
+
+  document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
 
 </html>

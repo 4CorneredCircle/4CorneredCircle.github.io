@@ -38,14 +38,12 @@
       <h2 style="text-align: center;">My top rated books and series!</h2>
     </div>
     <div class="main2">
-      <img src="podium.png" class="image" />
+      <img src="podium.png" class="image" alt="Podium image">
       <p>
         Here are some of my favorite books ever! I've broken the lists down by genre. I hope you enjoy and maybe get
         some inspiration for your next read! <br /> (Coming soon)
       </p>
-      <div class="footer">
-        Books are fun!
-      </div>
+      <div class="footer">&copy; 2019 - <span id="year"></span></div>
     </div>
   </div>
 </body>
@@ -54,6 +52,8 @@
     document.getElementById("sidebar").classList.toggle("active");
     x.classList.toggle("change");
   }
+
+  document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
 
 </html>

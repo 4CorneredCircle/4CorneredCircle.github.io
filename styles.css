@@ -138,9 +138,9 @@ p {
   border-radius: 50px;
   width: 38%;
   height: 97.5%;
-  position: relative;
+  position: absolute;
   left: 41%;
-  bottom: 86.5%;
+  top: 400px;
   overflow-y: scroll;
 }
 
@@ -179,7 +179,7 @@ p {
   justify-content: center;
   position: relative;
   left: 22%;
-  top: 12%;
+  top: 208px;
 }
 
 .bubble-container a {
@@ -187,14 +187,19 @@ p {
   color: black;
 }
 
+.bubble-container div:hover {
+  background: whitesmoke;
+  border: 2px solid black;
+}
+
 .reviews-bubble {
   background: white;
   border-radius: 50px;
   width: 300px;
-  height: 5%;
+  height: 300px;
   text-align: center;
   position: relative;
-  bottom: 10px;
+  bottom: 15px;
 }
 
 .reviews-bubble img {
@@ -207,7 +212,7 @@ p {
   background: white;
   border-radius: 50px;
   width: 300px;
-  height: 5%;
+  height: 300px;
   text-align: center;
 }
 
@@ -224,7 +229,7 @@ p {
   height: 300px;
   text-align: center;
   position: relative;
-  top: 10px;
+  top: 15px;
 }
 
 .booklist-bubble img {
@@ -250,6 +255,11 @@ p {
   padding-top: 8px;
   padding-bottom: 8px;
   font-size: large;
+}
+
+#index-footer {
+  position: relative;
+  top: 300px;
 }
 
 .review-list {

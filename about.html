@@ -40,7 +40,7 @@
             <h2 style="text-align: center;">All about Squared Circle and me!</h2>
         </div>
         <div class="main2">
-            <img src="books.png" id="special-image" alt="" />
+            <img src="books.png" id="special-image" alt="Image of a stack of books">
             <p style="font-size: large;">
                 I love reading books. I do it ALL the time. So on this website, I
                 decided to review books that I've read. I'll try my best to give honest,
@@ -78,7 +78,7 @@
                 4CorneredCircle! Anyways, you learn something new every day!
             </p>
         </div>
-        <div class="footer">Books are fun!</div>
+        <div class="footer">&copy; 2019 - <span id="year"></span></div>
     </div>
     </div>
 </body>
@@ -87,6 +87,8 @@
         document.getElementById("sidebar").classList.toggle("active");
         x.classList.toggle("change");
     }
+
+    document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
 
 </html>

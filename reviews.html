@@ -51,7 +51,7 @@
       </ul>
       <!--Nyxia Review-->
       <div class="review" id="nyxia" style="cursor: pointer;">
-        <img src="4 star.png" id="special-image">
+        <img src="4 star.png" id="special-image" alt="4 stars icon">
         <h1>Nyxia</h1>
         <h2>By: Scott Reintgen</h2>
         <p id="nyxia-info" style="text-align: center;">(Click Anywhere to Expand or Retract)</p>
@@ -109,7 +109,7 @@
       </div>
       <!--Ender's Game Review-->
       <div class="review" id="ender" style="cursor: pointer;">
-        <img src="5star.png" id="special-image" />
+        <img src="5star.png" id="special-image" alt="5 stars icon">
         <h1>Ender's Game</h1>
         <h2>By: Orson Scott Card</h2>
         <p id="ender-info" style="text-align: center;">(Click Anywhere to Expand or Retract)</p>
@@ -137,7 +137,7 @@
       <!--One for the Murphy's Review-->
       <div class="review" id="murphy" style="cursor: pointer;">
         <h2><u>SPECIAL GUEST REVIEW BY MY SISTER!</u></h2>
-        <img src="5star.png" id="special-image" />
+        <img src="5star.png" id="special-image" alt="5 stars icon">
         <h1>One For the Murphys</h1>
         <h2>By: Lynda Mullaly Hunt</h2>
         <p id="murphy-info" style="text-align: center;">(Click Anywhere to Expand or Retract)</p>
@@ -162,7 +162,7 @@
       </div>
       <!--Gemina Review-->
       <div class="review" id="gemina" style="cursor: pointer;">
-        <img src="4-5 stars.png" id="special-image" />
+        <img src="4-5 stars.png" id="special-image" alt="4.5 stars icon">
         <h1>Gemina</h1>
         <h2>By: Amie Kaufman and Jay Kristoff</h2>
         <p id="gemina-info" style="text-align: center;">(Click Anywhere to Expand or Retract)</p>
@@ -203,7 +203,7 @@
       </div>
       <!--Illuminae Review-->
       <div class="review" id="illuminae" style="cursor: pointer;">
-        <img src="5star.png" id="special-image" />
+        <img src="5star.png" id="special-image" alt="5 stars icon">
         <h1>Illuminae</h1>
         <h2>By: Amie Kaufman and Jay Kristoff</h2>
         <p id="illuminae-info" style="text-align: center;">(Click Anywhere to Expand or Retract)</p>
@@ -241,7 +241,7 @@
       </div>
       <!--The Warlock Review-->
       <div class="review" id="warlock" style="cursor: pointer;">
-        <img src="3-5_starrating-3.png" id="special-image" />
+        <img src="3-5_starrating-3.png" id="special-image" alt="3.5 stars icon">
         <h1>The Warlock</h1>
         <h2>By: Michael Scott</h2>
         <p id="warlock-info" style="text-align: center;">(Click Anywhere to Expand or Retract)</p>
@@ -292,7 +292,7 @@
       </div>
       <!--The Necromancer Review-->
       <div class="review" id="necromancer" style="cursor: pointer;">
-        <img src="4-5 stars.png" id="special-image" />
+        <img src="4-5 stars.png" id="special-image" alt="4.5 stars icon">
         <h1>The Necromancer</h1>
         <h2>By: Michael Scott</h2>
         <p id="necromancer-info" style="text-align: center;">(Click anywhere to Expand or Retract)</p>
@@ -331,7 +331,7 @@
       </div>
       <!--The Sorceress Review-->
       <div class="review" id="sorceress" style="cursor: pointer;">
-        <img src="4 star.png" id="special-image" />
+        <img src="4 star.png" id="special-image" alt="4 stars icon">
         <h1>The Sorceress</h1>
         <h2>By: Michael Scott</h2>
         <p id="sorceress-info" style="text-align: center;">(Click anywhere to Expand or Retract)</p>
@@ -361,7 +361,7 @@
       </div>
       <!--Artemis Fowl: The Opal Deception Review-->
       <div class="review" id="opal-deception" style="cursor: pointer;">
-        <img src="4-5 stars.png" id="special-image" />
+        <img src="4-5 stars.png" id="special-image" alt="4.5 stars icon">
         <h1>Artemis Fowl: The Opal Deception</h1>
         <h2>By: Erin Colfer</h2>
         <p id="opal-info" style="text-align: center;">(Click anywhere to Expand or Retract)</p>
@@ -382,9 +382,7 @@
           favorite book in the series, Artemis Fowl: The Opal Deception.
         </p>
       </div>
-      <div class="footer">
-        <a href="#top" id="footer-link"></a>
-      </div>
+      <div class="footer">&copy; 2019 - <span id="year"></span></div>
       <button onclick="topFunction()" id="top-button" title="Go to Top">Back to top</button>
     </div>
   </div>
@@ -577,6 +575,8 @@
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
+
+  document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
 
 </html>
