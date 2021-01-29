@@ -291,6 +291,45 @@ p {
   margin: 20px;
 }
 
+.booklist-genre {
+  background: white;
+  border-radius: 25px;
+  border: 5px solid rgb(15, 204, 204);
+  text-align: left;
+  width: 47.5%;
+  position: relative;
+  height: 350px;
+  font-size: large;
+  text-align: left;
+}
+
+#sci-fi-genre {
+  left: 1%;
+}
+
+#fantasy-genre {
+  left: 50.4%;
+  bottom: 360px;
+}
+
+#realistic-genre {
+  bottom: 347px;
+  left: 1%;
+}
+
+#science-genre {
+  bottom: 707px;
+  left: 50.4%;
+}
+
+#sci-fi-genre h2, #fantasy-genre h2, #realistic-genre h2, #science-genre h2 {
+  text-align: center;
+}
+
+.booklist-book {
+  text-decoration: underline;
+}
+
 #footer-link {
   color: white;
 }
