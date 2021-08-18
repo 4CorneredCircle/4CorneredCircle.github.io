@@ -8,13 +8,16 @@ html {
 body {
   font-family: "Nunito", sans-serif;
   height: 100%;
+  width: 100%;
   margin: 0px;
-  background-image: linear-gradient(
+  /*background:rgb(10, 141, 130);*/
+  /*background-image: linear-gradient(
     to bottom,
-    steelblue,
+    rgb(10, 141, 130),
     rgb(15, 204, 204),
-    steelblue
-  );
+    rgb(10, 141, 130)
+  );*/
+  background-image: radial-gradient(rgb(10, 141, 130), rgb(35, 126, 126));
 }
 
 .main_wrapper {
@@ -137,10 +140,10 @@ p {
   background: white;
   border-radius: 50px;
   width: 38%;
-  height: 97.5%;
+  height: 101%;
   position: absolute;
   left: 41%;
-  top: 400px;
+  top: 305px;
   overflow-y: scroll;
 }
 
@@ -179,7 +182,8 @@ p {
   justify-content: center;
   position: relative;
   left: 22%;
-  top: 208px;
+  top: 120px;
+  width: 100px;
 }
 
 .bubble-container a {
@@ -247,7 +251,7 @@ p {
 }
 
 .footer {
-  background: navy;
+  background: rgb(3, 49, 45);
   color: white;
   height: 30px;
   width: 100%;
@@ -258,8 +262,8 @@ p {
 }
 
 #index-footer {
-  position: relative;
-  top: 300px;
+  position: absolute;
+  bottom: -400px;
 }
 
 .review-list {
@@ -387,7 +391,7 @@ p {
   display: none;
 }
 
-#mobile-warning{
+/*#mobile-warning{
   display: none;
   background: yellow;
   height: 100vh;
@@ -403,7 +407,7 @@ p {
 #mobile-warning p {
   position: relative;
   top: 40%;
-}
+}*/
 
 #top-button {
   display: none;
@@ -470,4 +474,55 @@ p {
     left: 0px;
     overflow-y: scroll;
   }
+}
+
+#navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  height: 155px;
+  color: white;
+  background:rgb(6, 197, 165);
+  border-bottom: 10px solid rgb(13, 92, 75);
+}
+
+#navigation-title {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  padding: 3px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#navigation img {
+  height: 60px;
+}
+
+#navigation ul, li {
+  display: inline;
+  text-decoration: none;
+}
+
+#navigation ul li {
+  margin: 100px;
+  padding: 10px;
+  font-size: 24px;
+  background: white;
+  border-radius: 10px;
+}
+
+#navigation ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+#navigation ul li a:hover {
+  text-decoration: underline;
 }
