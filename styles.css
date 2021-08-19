@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 html {
   height: 100%;
@@ -6,7 +7,7 @@ html {
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Lora", serif;
   height: 100%;
   width: 100%;
   margin: 0px;
@@ -17,7 +18,7 @@ body {
     rgb(15, 204, 204),
     rgb(10, 141, 130)
   );*/
-  background-image: radial-gradient(rgb(10, 141, 130), rgb(35, 126, 126));
+  background-image: radial-gradient(rgb(16, 133, 123), rgb(14, 212, 212));
 }
 
 .main_wrapper {
@@ -26,7 +27,11 @@ body {
   align-items: center;
   height: 100%;
   padding: 16px;
-  box-sizing: border-box;
+  box-sizing: content-box;
+}
+
+#reviews-wrapper {
+  padding: 10px;
 }
 
 .main {
@@ -34,6 +39,10 @@ body {
   width: 100%;
   max-width: 1200px;
   border: 3px solid black;
+}
+
+.main h2 {
+  font-family: "Open Sans", sans-serif;
 }
 
 .page-header {
@@ -52,6 +61,35 @@ p {
   max-width: 1200px;
   flex-grow: 1;
   text-align: center;
+}
+
+.cover-bubble {
+  background: white;
+  height: 400px;
+  width: 20%;
+  align-content: center;
+  border-radius: 30px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.cover-bubble img {
+  width: 80%;
+  position: relative;
+  top: 20px;
+}
+
+.cover-bubble h4 {
+  position: relative;
+  bottom: 10px;
+}
+
+#review-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
 #sidebar {
@@ -136,6 +174,10 @@ p {
   display: inline-block;
 }
 
+#welcome-subheader {
+  font-family: "Open Sans", sans-serif;
+}
+
 #updates-bubble {
   background: white;
   border-radius: 50px;
@@ -167,6 +209,7 @@ p {
   position: relative;
   top: 4%;
   margin: auto;
+  font-family: "Open Sans", sans-serif;
 }
 
 #updates-bubble h1 {
@@ -253,7 +296,7 @@ p {
 .footer {
   background: rgb(3, 49, 45);
   color: white;
-  height: 30px;
+  display: inline-block;
   width: 100%;
   text-align: center;
   padding-top: 8px;
@@ -264,6 +307,11 @@ p {
 #index-footer {
   position: absolute;
   bottom: -400px;
+}
+
+#reviews-footer {
+  position: absolute;
+  left: 0px;
 }
 
 .review-list {
@@ -334,21 +382,12 @@ p {
   text-decoration: underline;
 }
 
-#footer-link {
-  color: white;
-}
-
 .larger-header {
   font-size: 30pt;
 }
 
 .faq {
   font-weight: bolder;
-}
-
-#banner {
-  background: rgb(251, 255, 0);
-  border: 2px solid rgb(126, 19, 158);
 }
 
 #warlock-text {
@@ -476,33 +515,53 @@ p {
   }
 }
 
+#navigation-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #navigation {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
   width: 100%;
-  height: 155px;
+  max-width: 1200px;
+  height: 160px;
   color: white;
   background:rgb(6, 197, 165);
-  border-bottom: 10px solid rgb(13, 92, 75);
+  border: 8px solid rgb(13, 92, 75);
+  border-top: none;
 }
 
 #navigation-title {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
+  width: 200px;
+  height: 135px;
   background: white;
+  text-decoration: none;
   color: black;
   border-radius: 10px;
   padding: 3px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  position: relative;
+  right: 480px;
+  top: 30px;
+}
+
+#navigation h3 {
+  position: relative;
+  bottom: 5px;
 }
 
 #navigation img {
-  height: 60px;
+  height: 80px;
+  position: relative;
+  bottom: 10px;
 }
 
 #navigation ul, li {
@@ -511,8 +570,10 @@ p {
 }
 
 #navigation ul li {
-  margin: 100px;
+  margin: 40px;
   padding: 10px;
+  position: relative;
+  bottom: 43px;
   font-size: 24px;
   background: white;
   border-radius: 10px;

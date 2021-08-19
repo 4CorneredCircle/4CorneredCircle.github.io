@@ -18,19 +18,21 @@
 </head>
 
 <body>
-  <div id="navigation">
-    <div id="navigation-title">
-      <h3>Squared Circle</h3>
-      <a href="index.html"><img src="favicon.ico"></a>
+  <div id=navigation-wrapper>
+    <div id="navigation">
+      <a href=index.html id="navigation-title">
+        <h3>Squared Circle</h3>
+        <img src="favicon.ico">
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="booklist.html">Book Awards</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
     </div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="reviews.html">Reviews</a></li>
-      <li><a href="booklist.html">Booklist</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
   </div>
-  <div class="main_wrapper">
+  <div class="main_wrapper" id="reviews-wrapper">
     <div class="main" id="top">
       <h1 class="page-header">Reviews</h1>
       <h2 style="text-align: center;">Latest book reviews from me!</h2>
@@ -352,7 +354,7 @@
       <div class="review" id="opal-deception" style="cursor: pointer;">
         <img src="4-5 stars.png" id="special-image" alt="4.5 stars icon">
         <h1>Artemis Fowl: The Opal Deception</h1>
-        <h2>By: Erin Colfer</h2>
+        <h2>By: Eoin Colfer</h2>
         <p id="opal-text">
           Artemis Fowl: The Opal Deception is a classic Artemis Fowl book. It is the 4th book in the <i>Artemis Fowl</i>
           series, and mostly follows the tried and
@@ -370,7 +372,7 @@
           favorite book in the series, Artemis Fowl: The Opal Deception.
         </p>
       </div>
-      <div class="footer">&copy; 2020 - <span id="year"></span></div>
+      <div class="footer" id="reviews-footer">&copy; 2020 - <span id="year"></span></div>
       <button onclick="topFunction()" id="top-button" title="Go to Top">Back to top</button>
     </div>
   </div>
