@@ -2,14 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 html {
-  height: 100%;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Lora", serif;
   height: 100%;
-  width: 100%;
+  width: 99vw;
   margin: 0px;
   /*background:rgb(10, 141, 130);*/
   /*background-image: linear-gradient(
@@ -74,7 +73,7 @@ p {
 }
 
 .cover-bubble img {
-  width: 80%;
+  width: 75%;
   position: relative;
   top: 20px;
 }
@@ -161,11 +160,9 @@ p {
   top: 4%;
   margin: auto;
   font-family: "Open Sans", sans-serif;
-}
-
-#updates-bubble h1 {
-  text-align: center;
-  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bubble-container {
@@ -176,7 +173,7 @@ p {
   justify-content: center;
   position: relative;
   left: 22%;
-  top: 120px;
+  top: 95px;
   width: 100px;
 }
 
@@ -197,7 +194,7 @@ p {
   height: 300px;
   text-align: center;
   position: relative;
-  bottom: 15px;
+  margin: 10px;
 }
 
 .reviews-bubble img {
@@ -212,6 +209,7 @@ p {
   width: 300px;
   height: 300px;
   text-align: center;
+  margin: 10px;
 }
 
 .about-bubble img {
@@ -227,7 +225,7 @@ p {
   height: 300px;
   text-align: center;
   position: relative;
-  top: 15px;
+  margin: 10px;
 }
 
 .booklist-bubble img {
@@ -253,11 +251,6 @@ p {
   padding-top: 8px;
   padding-bottom: 8px;
   font-size: large;
-}
-
-#index-footer {
-  position: absolute;
-  bottom: -400px;
 }
 
 #reviews-footer {
@@ -294,35 +287,25 @@ p {
   margin: 20px;
 }
 
+#booklist-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .booklist-genre {
   background: white;
   border-radius: 25px;
   border: 5px solid rgb(15, 204, 204);
   text-align: left;
-  width: 47.5%;
-  position: relative;
-  height: 350px;
+  width: 45%;
+  height: clamp(350px, 350px, 450px);
+  overflow-y: scroll;
+  margin: 10px;
   font-size: large;
   text-align: left;
-}
-
-#sci-fi-genre {
-  left: 1%;
-}
-
-#fantasy-genre {
-  left: 50.4%;
-  bottom: 360px;
-}
-
-#realistic-genre {
-  bottom: 347px;
-  left: 1%;
-}
-
-#science-genre {
-  bottom: 707px;
-  left: 50.4%;
 }
 
 #sci-fi-genre h2, #fantasy-genre h2, #realistic-genre h2, #science-genre h2 {
@@ -333,71 +316,9 @@ p {
   text-decoration: underline;
 }
 
-.larger-header {
-  font-size: 30pt;
-}
-
 .faq {
   font-weight: bolder;
 }
-
-#warlock-text {
-  display: none;
-}
-
-#necromancer-text {
-  display: none;
-}
-
-#sorceress-text {
-  display: none;
-}
-
-#opal-text {
-  display: none;
-}
-
-#illuminae-text {
-  display: none;
-}
-
-#gemina-text {
-  display: none;
-}
-
-#murphy-text {
-  display: none;
-}
-
-#ender-text {
-  display: none;
-}
-
-#mockingbird-text {
-  display: none;
-}
-
-#nyxia-text {
-  display: none;
-}
-
-/*#mobile-warning{
-  display: none;
-  background: yellow;
-  height: 100vh;
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  z-index: 4;
-  font-size: x-large;
-}
-
-#mobile-warning p {
-  position: relative;
-  top: 40%;
-}*/
 
 #top-button {
   display: none;
@@ -425,46 +346,6 @@ p {
   }
 }
 */
-
-@media only screen and (max-width: 1000px) {
-  .bubble-container {
-    flex-direction: column;
-    align-items: center;
-    left: 0px;
-  }
-
-  .reviews-bubble {
-    width: 75%;
-    left: 0px;
-    margin: auto;
-  }
-  .about-bubble {
-    width: 107%;
-    left: 0px;
-    margin: auto;
-    right: 0px;
-  }
-  .booklist-bubble {
-    width: 75%;
-    left: 0px;
-    height: 275px;
-    margin: auto;
-  }
-  .welcome-header {
-    width: 95%;
-    height: 250px;
-    margin: auto;
-    overflow: hidden;
-  }
-
-  #updates-bubble {
-    top: 150px;
-    margin: auto;
-    width: 93%;
-    left: 0px;
-    overflow-y: scroll;
-  }
-}
 
 #navigation-wrapper {
   display: flex;
@@ -537,4 +418,40 @@ p {
 
 #navigation ul li a:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 1600px) {
+  .bubble-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    left: 0px;
+  }
+
+  .bubble-container div {
+    margin: 10px;
+  }
+
+  .welcome-header {
+    width: 95%;
+    height: 250px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  #updates-bubble {
+    top: 150px;
+    width: 80vw;
+    height: 70vh;
+    overflow-y: scroll;
+    position: relative;
+    left: 0px;
+    margin: auto; 
+  }
+
+  .booklist-genre {
+    width: 70vw;
+  }
 }
