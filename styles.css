@@ -79,9 +79,26 @@ p {
   top: 20px;
 }
 
+.cover-bubble h2, h4 {
+  word-wrap: break-word;
+}
+
 .cover-bubble h4 {
   position: relative;
   bottom: 10px;
+}
+
+.review-text {
+  display: none;
+  background: white;
+  border-radius: 10px;
+  margin: 20px;
+  text-align: left;
+  padding: 10px;
+}
+
+.highlight-review {
+  border: 6px solid black;
 }
 
 #review-container {
@@ -90,72 +107,6 @@ p {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-}
-
-#sidebar {
-  position: fixed;
-  width: 250px;
-  height: 100%;
-  background: rgb(0, 0, 128);
-  left: -250px;
-  transition: all 400ms linear;
-  border-right: 2px solid white;
-  z-index: 4;
-}
-
-#sidebar.active {
-  left: 0px;
-}
-
-#sidebar ul li {
-  color: white;
-  list-style: none;
-  padding: 15px 10px;
-  font-size: larger;
-}
-
-#sidebar ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-#sidebar ul li a:hover {
-  text-decoration: underline;
-}
-
-#sidebar .toggle-button {
-  position: absolute;
-  left: 280px;
-  top: 20px;
-  display: inline-block;
-  cursor: pointer;
-}
-
-#sidebar .toggle-button span {
-  display: block;
-  width: 35px;
-  height: 5px;
-  background: white;
-  margin: 6px 0px;
-  transition: 0.4s;
-  box-shadow: black;
-}
-
-/* Rotate first bar */
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-/* Fade out second bar */
-.change .bar2 {
-  opacity: 0;
-}
-
-/* Rotate last bar */
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-9px, -7px);
-  transform: rotate(45deg) translate(-9px, -7px);
 }
 
 .welcome-header {
