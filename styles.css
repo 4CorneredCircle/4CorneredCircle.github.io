@@ -64,18 +64,19 @@ p {
 
 .cover-bubble {
   background: white;
-  height: 400px;
+  height: 410px;
   width: 20%;
   align-content: center;
   border-radius: 30px;
   margin: 20px;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .cover-bubble img {
   width: 75%;
   position: relative;
-  top: 20px;
+  top: 15px;
 }
 
 .cover-bubble h2, h4 {
@@ -358,7 +359,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  width: 100%;
+  width: 101vw;
   max-width: 1200px;
   height: 160px;
   color: white;
@@ -453,5 +454,49 @@ p {
 
   .booklist-genre {
     width: 70vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #navigation-title {
+    position: relative;
+    top: -10px;
+    right: 0px;
+    width: 40%;
+    height: 100px;
+  }
+
+  #navigation {
+    border: none;
+    border-bottom: 8px solid rgb(13, 92, 75);
+    height: 25vh;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #navigation img {
+    height: 40%;
+  }
+
+  #navigation ul {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  #navigation ul li {
+    margin: 0px;
+    top: 7px;
+    font-size: initial;
+    flex-shrink: 1;
+    flex-basis: content;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .cover-bubble {
+    height: fit-content;
+    width: 50%;
+    margin: 30px;
   }
 }
